@@ -193,6 +193,11 @@ p{
     color: #000;
 }
 
+#text-3 span {
+    color: crimson;
+    font-weight: 500;
+	font-size: 35px;
+}
  
 .scrollToTopBtn {
 	position: fixed;

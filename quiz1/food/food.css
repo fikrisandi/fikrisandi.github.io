@@ -155,6 +155,11 @@ nav ul li a:hover::after{
 	}
 }
 
+#text-3 span {
+    color: crimson;
+    font-weight: 500;
+	font-size: 35px;
+}
 
 section h2 {
     padding-bottom: 20px;
