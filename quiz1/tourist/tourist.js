@@ -24,7 +24,7 @@ open.addEventListener("click", function(){
 });
 
 const textDisplay = document.getElementById('text')
-const phrases = ['Gresik Tourist PLace','You Can View The Map If You Want To Visit It','Good Luck :)']
+const phrases = ['Gresik Tourist Place','You Can View The Map If You Want To Visit It','Good Luck :)']
 let i = 0
 let j = 0
 let currentPhrase = []
