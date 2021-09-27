@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="tourist.css">
 
@@ -18,6 +19,10 @@
 <body>
 
     <header>
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
         <div class="container">
             <nav>
                 <ul>
@@ -131,27 +136,27 @@
                 </div>
             </div>
             <div class="row align-content-center">
-                <div class="col-6 ">
+                <div class="col-lg-6 col-sm-6 mb-5">
                     <h1 style="text-align: center;">Map Pasir Putih</h1>
                     <iframe style="padding: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.40032531501!2d112.43660352653679!3d-6.878612070469382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77dd5737d630a5%3A0x10526e190e40a5d2!2sPantai%20Delegan!5e0!3m2!1sid!2sid!4v1632671569931!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="col-6 pb-5">
+                <div class="col-lg-6 col-sm-6 mb-5">
                     <h1 style="text-align: center;">Map Bukit Jamur</h1>
                     <iframe style="padding: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.715714879589!2d112.56452021474394!3d-7.042657194913208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb4d813a2fe1%3A0x97beefe4da868bad!2sBukit%20Jamur!5e0!3m2!1sid!2sid!4v1632671661247!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="col-6 pb-5">
+                <div class="col-lg-6 col-sm-6 mb-5">
                     <h1 style="text-align: center;">Map Pulau Bawean</h1>
                     <iframe style="padding: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127022.04785001358!2d112.58561727009466!3d-5.793499850660033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf5782884529d1%3A0x52621acdfb67b026!2sPulau%20Bawean!5e0!3m2!1sid!2sid!4v1632671699486!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="col-6 pb-5">
+                <div class="col-lg-6 col-sm-6 mb-5">
                     <h1 style="text-align: center;">Map Bukit Larangan Panceng</h1>
                     <iframe style="padding: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2027939.8750183773!2d111.35458913125!3d-6.91210569999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77e7a9b84f46a7%3A0x3917def919f12d6c!2sBukit%20Larangan!5e0!3m2!1sid!2sid!4v1632671731375!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="col-6 pb-5">
+                <div class="col-lg-6 col-sm-6 mb-5">
                     <h1 style="text-align: center;">Map Makam Sunan Giri</h1>
                     <iframe style="padding: 10px;"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.617626963458!2d112.62843261474464!3d-7.170123194823034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77ffe3ffffffff%3A0xafe5c997089beb4!2sMakam%20Sunan%20Giri!5e0!3m2!1sid!2sid!4v1632671781720!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="col-6 pb-5">
+                <div class="col-lg-6 col-sm-6 mb-5">
                     <h1 style="text-align: center;">Map Makam Sunan Malik Ibrahim</h1>
                     <iframe style="padding: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7041737966856!2d112.65429981474463!3d-7.160158794830076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd8005aa58ac007%3A0xb72843108c8ec7c1!2sMakam%20Sunan%20Maulana%20Malik%20Ibrahim!5e0!3m2!1sid!2sid!4v1632671797352!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>

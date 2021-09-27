@@ -7,6 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="hometown.css">
 
@@ -16,6 +17,10 @@
 <body>
 
     <header>
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
         <div class="container">
             <nav>
                 <ul>
@@ -29,7 +34,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col" style="text-align: center; padding: 15%;">
+                <div class="col" id="typing" style="height: 70vh; display: flex; align-items: center; justify-content: center;">
                     <p id="text-3"><span id="text"></span> </p>
                 </div>
             </div>
@@ -43,19 +48,25 @@
                     <h2 class="title"><strong>About Gresik</strong></h2>
                 </div>
             </div>
-            <div class="row align-items-center" style="display: flex; flex-direction: column;">
-                <div class="col mb-5" style="display: flex; justify-content: space-around;">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 d-flex align-items-center justify-content-lg-evenly">
                     <img src="../img/logo_gresik.png" style="height: 450px; width: 450px;" alt="Image placeholder"
                         class="img-fluid">
+                </div>
+                <div class="col-lg-6 mb-5 d-flex align-items-center justify-content-lg-evenly">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31669.30260057969!2d112.63542786657162!3d-7.164921118904571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd800504acb3253%3A0x25d71798cd652fb9!2sGresik%2C%20Kec.%20Gresik%2C%20Kabupaten%20Gresik%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1632651836845!5m2!1sid!2sid"
-                        width="600" height="450" style="border:0; border-radius: 20px;" allowfullscreen=""
+                        width="450" height="450" style="border:0; border-radius: 20px;" allowfullscreen=""
                         loading="lazy"></iframe>
                 </div>
-                <div class="col mb-5">
-                    <p class="lead" style="text-align: justify;">Gresik is the name of a city in the province of East
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mb-5">
+                    <p class="lead" style="text-align: justify;">Gresik is the name of a city in the province of
+                        East
                         Java. The city of Gresik is located between the city of Surabaya and the city of Lamongan.
-                        Gresik city itself is the only city in Indonesia that has many names. Some of its nicknames are
+                        Gresik city itself is the only city in Indonesia that has many names. Some of its nicknames
+                        are
                         Pudak City, Milkfish City, Industry City and guardian or santri City.</p>
                 </div>
             </div>
@@ -70,7 +81,7 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col mb-5" style="justify-content: center; text-align: center;">
+                <div class="col-lg-6 col-sm-6 mb-5" style="justify-content: center; text-align: center;">
                     <img src="../img//hometown/pudak.jpg" style="border-radius: 20px; height: 450px; width: 450px;"
                         alt="Image placeholder" class="img-fluid">
                 </div>
@@ -106,8 +117,8 @@
                     <h2 class="title"><strong>Gresik Kota Wali / Santri</strong></h2>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col mb-5">
+            <div class="wali row align-items-center">
+                <div class="col-lg-6 col-sm-6 mb-5">
                     <p class="lead" style="text-align: justify;">Two of the nine Walisongo are in the city of Gresik,
                         including Sunan Giri and Sunan Maulana Malik Ibrahim. No wonder many people refer to Gresik as
                         the city of guardians or the city of santri because of the existence of a guardian and identical
@@ -126,7 +137,7 @@
                         Decorated with Faith".
                     </p>
                 </div>
-                <div class="col mb-5" style="justify-content: center; text-align: center;">
+                <div class="col-lg-6 col-sm-6 mb-5" style="justify-content: center; text-align: center;">
                     <img src="../img/hometown/makam.jpg" style="border-radius: 20px; height: 450px; width: 450px;"
                         alt="Image placeholder" class="img-fluid">
                 </div>
@@ -142,11 +153,11 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col mb-5" style="justify-content: center; text-align: center;">
+                <div class="col-lg-6 col-sm-6 mb-5" style="justify-content: center; text-align: center;">
                     <img src="../img//hometown/bandeng.jpg" style="border-radius: 20px; height: 450px; width: 450px;"
                         alt="Image placeholder" class="img-fluid">
                 </div>
-                <div class="col mb-5">
+                <div class="col-lg-6 col-sm-6 mb-5">
                     <p class="lead" style="text-align: justify;">Talking about the traditions of the city of Gresik, we
                         will never finish in one face-to-face because there are so many traditions that continue to be
                         cultivated among the people of the city of Gresik. For example, at the end of the month of
@@ -181,8 +192,8 @@
                     <h2 class="title"><strong>Gresik Kota Industri</strong></h2>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col mb-5">
+            <div class="industri row align-items-center">
+                <div class="col-lg-6 col-sm-6 mb-5">
                     <p class="lead" style="text-align: justify;">Gresik has an industrial area called the Gresik
                         Industrial Estate (KIG). There are dozens of factories in the area that produce various products
                         and provide a variety of morning jobs for most of the people of Gresik and its surroundings.
@@ -194,7 +205,7 @@
                         of Gresik produces various types of needs for the people of the city of Gresik itself, such as;
                         convection bags, gloves, koko clothes, etc.</p>
                 </div>
-                <div class="col mb-5" style="justify-content: center; text-align: center;">
+                <div class="col-lg-6 col-sm-6 mb-5" style="justify-content: center; text-align: center;">
                     <img src="../img/hometown/industro.jpg" style="border-radius: 20px; height: 450px; width: 450px;"
                         alt="Image placeholder" class="img-fluid">
                 </div>

@@ -33,6 +33,32 @@ header{
 	margin: 0 auto;
 }
 
+
+.menu-toggle {
+	position: fixed;
+	top: 2.5rem;
+	right: 2.5rem;
+	color: #eeeeee;
+	font-size: 3rem;
+	cursor: pointer;
+	z-index: 1000;
+	display: none;
+}
+
+
+.overlay {
+	background-color: rgba(0,0,0,.2);
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	transition: opacity 650ms;
+	transform: scale(0);
+	opacity: 0;
+	display: none;
+}
+
 nav{
 	padding-top: 5rem;
 	display: flex;
@@ -40,6 +66,7 @@ nav{
 	align-items: center;
 	text-transform: uppercase;
 	font-size: 1.6rem;
+	position: relative;
 }
 
 a:hover{
@@ -54,6 +81,15 @@ nav ul li{
 	list-style: none;
 	transform: translateX(100rem);
 	animation: slideIn .5s forwards;
+}
+
+.deskripsi {
+	height: 80vh;
+	width: 50vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .deskripsi p{
@@ -147,6 +183,8 @@ nav ul li a:hover::after{
 
 #text-4{
     font-size: 18px;
+	text-align: justify;
+	width: 40vw;
 }
 
 
@@ -154,3 +192,88 @@ p{
     color: black;
 }
 
+
+.frame {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width:680px) {
+
+	.menu-toggle {
+		display: block;
+	}
+
+	nav {
+		padding-top: 0;
+		display: none;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 100vh;
+		text-align: center;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li {
+		margin-top: 5rem;
+	}
+
+	nav ul li a {
+		margin: 0;
+		font-size: 2.5rem;
+	}
+
+	.overlay.menu-open,
+	nav.menu-open {
+		display: flex;
+		transform: scale(1);
+		opacity: 1;
+	}
+
+
+	.deskripsi {
+		height: 50vh;
+		width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.frame {
+		height: 30vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	iframe {
+		width: 450px;
+		height: 230px;
+	}
+
+	#text-1 {
+		font-size: 24px;
+	}
+
+	#text-2 {
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	#text-3 span {
+		color: crimson;
+		font-weight: 500;
+		font-size: 20px;
+	}
+
+	#text-4 {
+		width: 100vw;
+	}
+}
