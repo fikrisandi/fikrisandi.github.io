@@ -227,11 +227,9 @@ section h2::after {
 
 
 @media screen and (max-width:680px) {
-
 	.menu-toggle {
 		display: block;
 	}
-
 	nav {
 		padding-top: 0;
 		display: none;
@@ -241,39 +239,31 @@ section h2::after {
 		height: 100vh;
 		text-align: center;
 	}
-
 	nav ul {
 		flex-direction: column;
 	}
-
 	nav ul li {
 		margin-top: 5rem;
 	}
-
 	nav ul li a {
 		margin: 0;
 		font-size: 2.5rem;
 	}
-
 	.overlay.menu-open,
 	nav.menu-open {
 		display: flex;
 		transform: scale(1);
 		opacity: 1;
 	}
-
 	#section-gresik-industri .industri :nth-child(1) {
 		order: 1;
 	}
-
 	#section-gresik-industri .industri :nth-child(2) {
 		order: 0;
 	}
-
 	#section-gresik-wali .wali :nth-child(1) {
 		order: 1;
 	}
-
 	#section-gresik-wali .wali :nth-child(2) {
 		order: 0;
 	}

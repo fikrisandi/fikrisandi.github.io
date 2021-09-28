@@ -35,7 +35,6 @@ let isEnd = false
 function loop() {
     isEnd = false
     textDisplay.innerHTML = currentPhrase.join('')
-
     if (i < phrases.length) {
 
         if (!isDeleting && j <= phrases[i].length) {
@@ -43,18 +42,15 @@ function loop() {
             j++
             textDisplay.innerHTML = currentPhrase.join('')
         }
-
         if (isDeleting && j <= phrases[i].length) {
             currentPhrase.pop(phrases[i][j])
             j--
             textDisplay.innerHTML = currentPhrase.join('')
         }
-
         if (j == phrases[i].length) {
             isEnd = true
             isDeleting = true
         }
-
         if (isDeleting && j === 0) {
             currentPhrase = []
             isDeleting = false
@@ -69,7 +65,6 @@ function loop() {
     const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed
     setTimeout(loop, time)
 }
-
 loop()
 
 document.addEventListener("scroll", handleScroll);
