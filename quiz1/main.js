@@ -24,7 +24,7 @@ open.addEventListener("click", function(){
 });
 
 const textDisplay = document.getElementById('text')
-const phrases = ['I Am a Student College', 'In Institute Technology Sepuluh Nopember']
+const phrases = ['I Am a College Student', 'In Institute Technology Sepuluh Nopember']
 let i = 0
 let j = 0
 let currentPhrase = []
@@ -70,3 +70,4 @@ function loop() {
 }
 
 loop()
+
